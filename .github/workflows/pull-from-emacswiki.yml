@@ -10,8 +10,10 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/cache@v1
         with:
-          path: emacsmirror
+          path: ~/emacsmirror
           key: ${{ runner.os }}-emacsmirror
       - run: |
           git clone --branch master "https://github.com/emacsmirror/emacswiki.org" --depth 1 \
-          || git fetch "https://github.com/emacsmirror/emacswiki.org"
+          || (ls emacsmirror && git fetch origin)
+
+      - run: ls emacsmirror && git fetch origin --depth 1
