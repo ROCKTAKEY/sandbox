@@ -1,0 +1,21 @@
+name: pull-from-emacswiki
+
+on:
+  cron: '*/30 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/cache@v1
+        with:
+          path: emacsmirror
+          key: ${{ runner.os }}-emacsmirror
+      - run: |
+          git clone --branch master "https://github.com/emacsmirror/emacswiki.org" \
+          || git fetch "https://github.com/emacsmirror/emacswiki.org"
+
+
+      - run: make test-all
