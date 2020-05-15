@@ -1,7 +1,6 @@
 name: pull-from-emacswiki
 
-on:
-  cron: '*/30 * * * *'
+on: push
 
 jobs:
   test:
