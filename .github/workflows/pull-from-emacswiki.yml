@@ -13,8 +13,7 @@ jobs:
           path: ~/emacsmirror
           key: ${{ runner.os }}-emacsmirror
       - run: |
-          ls ~/
-          git clone --branch master "https://github.com/emacsmirror/emacswiki.org" --depth 1 \
-          || (ls emacsmirror && git fetch origin)
+        git clone --branch master --depth 1 "https://github.com/emacsmirror/emacswiki.org"  ~/ \
+          || (cd ~/emacsmirror && git fetch origin)
 
       - run: ls emacsmirror && git fetch origin --depth 1
