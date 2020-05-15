@@ -16,4 +16,5 @@ jobs:
         git clone --branch master --depth 1 "https://github.com/emacsmirror/emacswiki.org"  ~/ \
           || (cd ~/emacsmirror && git fetch origin)
 
-      - run: ls emacsmirror && git fetch origin --depth 1
+      - run: |
+          cd ~/emacsmirror && git fetch origin --depth 1
