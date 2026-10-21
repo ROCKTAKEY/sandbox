@@ -1,0 +1,1 @@
+Extra base-only commit to test whether a subsequent normal branch update reevaluates indirect PR merge recognition.
