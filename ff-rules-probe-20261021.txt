@@ -1,0 +1,3 @@
+GitHub ruleset test fixture, 2026-10-21.
+The base branch will be advanced via FF ref update only after the ruleset is configured.
+The original default branch remains untouched.
