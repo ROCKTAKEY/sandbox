@@ -1,0 +1,2 @@
+This is a negative control for the pull-request-required ruleset.
+No PR exists for this commit; the branch update should be rejected.
