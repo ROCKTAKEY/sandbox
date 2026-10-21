@@ -1,0 +1,1 @@
+Control for indirect PR merge with repository squash-only setting and no branch ruleset.
