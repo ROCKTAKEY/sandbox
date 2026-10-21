@@ -1,0 +1,3 @@
+Isolated GitHub fast-forward pull request test, 2026-10-21.
+This commit is for checking PR state and commit SHA preservation.
+No repository settings or default branches should be changed.
